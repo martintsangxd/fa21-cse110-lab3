@@ -50,10 +50,10 @@
         </div>
 
         <p>
-            Things that were <i>unfinished business</i> from <em>last meeting</em>: <span class="span">None</span>
+            Things that were <i>unfinished business</i> from <em>last meeting</em>: <br> <span class="span">None</span>
         </p>
         <p>
-            <b>New Business</b>: Get to know each other, <strong>decision for project</strong>...
+            <b>New Business</b>: <br> Get to know each other, <strong>decision for project</strong>...
         </p>
 
         <hr>
@@ -71,8 +71,73 @@
 
         <hr>
 
-        <video  width = "300" height = "200" controls autoplay>
-            <source src = "/html5/foo.ogg" type ="video/mp4" />
+        <details>
+            <summary>Image Details</summary>
+            Above is an image of the rocket launching.
+        </details>
+
+        <hr>
+
+        <p>Form:</p>
+
+        <form>
+            <fieldset>
+                <input type="checkbox" id="cb1">
+                <label for="cb1"> Checkbox 1 </label><br>
+                <input type="checkbox" id="cb2">
+                <label for="cb2"> Checkbox 2 </label><br>
+                <input type="checkbox" id="cb3">
+                <label for="cb3"> Checkbox 3 </label><br>
+            </fieldset>
+
+            <label for="txt">Text Area:</label>
+            <br>
+            <textarea id="txt" rows="3", cols="50"></textarea>
+
+            <br>
+
+            <p>Select:</p>
+            <select>
+                <option value="s1">1</option>
+                <option value="s2">2</option>
+                <option value="s3">3</option>
+                <option value="s4">4</option>
+            </select>
+
+            <input list="colors" id="color"/>
+
+            <datalist id="colors">
+                <option value="green">
+                <option value="red">
+                <option value="yellow">
+                <option value="blue">
+                <option value="pink">
+            </datalist>
+
+              <br>
+              <br>
+
+
+              <button type="button">I'm a button</button>
+
+        </form>
+
+        <datalist>
+            <option value="l">Lions</option>
+            <option value="w">wions</option>
+        </datalist>
+
+        <hr>
+
+        <audio controls>
+            <source src="dog.wav" type="audio/wav">
+          Your browser does not support the audio element.
+          </audio>
+
+        <hr>
+
+        <video  width = "300" height = "200" controls>
+            <source src = "dog.mp4" type ="video/mp4" />
             Your browser does not support the <video> element.
          </video>
 
