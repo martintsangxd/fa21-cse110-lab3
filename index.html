@@ -7,14 +7,18 @@
         <meta charset="UTF-8">
         <link rel="icon"
               type="image/png"
-              href="medias/icon.png"   /> 
+              href="media/icon.png"   /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
         <header>
-            <h1>Meeting Minutes</h1>
-            <hr>
+            <h1 class="title" style="font-family: 'Ephesis', cursive;">Meeting Minutes</h1>
+
 
             <nav>
                 <a href="https://github.com/martintsangxd">Github Profile</a>
@@ -22,120 +26,118 @@
     
             </nav>
         </header>
-        <hr>
 
-        <h2>Documentation</h2>
-        <h2>Oct 2, 2021</h2>
-
-        <hr>
-
-        <section class="attendance">
-            <h3>Attentdance:</h3>
-            <ol>
-                <li>Martin</li>
-                <li>Daniel</li>
-                <li>Liz</li>
-                <li>Kattie</li>
-            </ol>
-        </section>
+        <!-- inline stying -->
+        <h2 id="category" style="text-align: center;">Documentation</h2>
+        <h2 id="date" style="text-align: center;">Oct 2, 2021</h2>
 
         <hr>
 
-        <div class="agenda">
-            <h3>Agenda:</h3>
-            <ul>
-                <li>Ice-breakers</li>
-                <li>Decide Team Name</li>
-                <li>Assign roles</li>
-                <li>...</li>
-            </ul>
+        <div class="cards">
+            <section class="attendance">
+                <h3>Attentdance:</h3>
+                <ol>
+                    <li>Martin</li>
+                    <li>Daniel</li>
+                    <li>Liz</li>
+                    <li>Kattie</li>
+                </ol>
+            </section>
+
+            <div class="agenda">
+                <h3>Agenda:</h3>
+                <ul>
+                    <li>Ice-breakers</li>
+                    <li>Decide Team Name</li>
+                    <li>Assign roles</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+
+            <div class="question">
+                <h3 class="questionTitle">Questions/Comments:</h3>
+                <ul class="questionList">
+                    <li>When do we meet weekly? - Daniel</li>
+                    <li>How long is each meeting? - Kattie</li>
+                    <li>I'm exicited to work with a team. - Martin</li>
+                </ul>
+            </div>
         </div>
 
-        <p>
-            Things that were <i>unfinished business</i> from <em>last meeting</em>: <br> <span class="span">None</span>
+        <p id="unfB">
+            Things that were <i>unfinished business</i> from <em>last meeting</em>: <span class="span">None</span>
         </p>
 
-        <p>
-            <b>New Business</b>: <br> Get to know each other, <strong>decision for project</strong>...
+        <p id="newB">
+            <b>New Business</b>: Get to know each other, <strong>decision for project</strong>...
         </p>
 
         <hr>
 
-        <h3>Questions/Comments:</h3>
-        <ul>
-            <li>When do we meet weekly? - Daniel</li>
-            <li>How long is each meeting? - Kattie</li>
-            <li>I'm exicited to work with a team. - Martin</li>
-        </ul>
+        <div class="Grid">
+        <div class="Image">
+            <img src="media/rocket.jpg" alt="rocket launching" width="200px" height="200px"/>
 
-        <hr>
+            <details style="width: fit-content;">
+                <summary>Image Details</summary>
+                Above is an image of the rocket launching.
+            </details>
+        </div>
 
-        <img src="medias/rocket.jpg" alt="rocket launching"/>
+        <div class="Form">
+            <p>Form:</p>
 
-        <hr>
+            <form>
+                <fieldset>
+                    <input type="checkbox" id="cb1">
+                    <label for="cb1"> Checkbox 1 </label><br>
+                    <input type="checkbox" id="cb2">
+                    <label for="cb2"> Checkbox 2 </label><br>
+                    <input type="checkbox" id="cb3">
+                    <label for="cb3"> Checkbox 3 </label><br>
+                </fieldset>
 
-        <details>
-            <summary>Image Details</summary>
-            Above is an image of the rocket launching.
-        </details>
+                <label for="txt">Text Area:</label>
+                <textarea id="txt" rows="3" cols="50"></textarea>
 
-        <hr>
+                <p>Select:</p>
+                <select>
+                    <option value="s1">1</option>
+                    <option value="s2">2</option>
+                    <option value="s3">3</option>
+                    <option value="s4">4</option>
+                </select>
 
-        <p>Form:</p>
+                <input list="colors" id="color"/>
 
-        <form>
-            <fieldset>
-                <input type="checkbox" id="cb1">
-                <label for="cb1"> Checkbox 1 </label><br>
-                <input type="checkbox" id="cb2">
-                <label for="cb2"> Checkbox 2 </label><br>
-                <input type="checkbox" id="cb3">
-                <label for="cb3"> Checkbox 3 </label><br>
-            </fieldset>
+                <datalist id="colors">
+                    <option value="green">
+                    <option value="red">
+                    <option value="yellow">
+                    <option value="blue">
+                    <option value="pink">
+                </datalist>
 
-            <label for="txt">Text Area:</label>
-            <textarea id="txt" rows="3" cols="50"></textarea>
+                <button type="button">I'm a button</button>
 
-            <p>Select:</p>
-            <select>
-                <option value="s1">1</option>
-                <option value="s2">2</option>
-                <option value="s3">3</option>
-                <option value="s4">4</option>
-            </select>
+            </form>
+        </div>
 
-            <input list="colors" id="color"/>
+        <div class="audio">
+            <audio controls>
+                <source src="media/dog.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
 
-            <datalist id="colors">
-                <option value="green">
-                <option value="red">
-                <option value="yellow">
-                <option value="blue">
-                <option value="pink">
-            </datalist>
-
-              <button type="button">I'm a button</button>
-
-        </form>
-
-        <datalist>
-            <option value="l">Lions</option>
-            <option value="w">wions</option>
-        </datalist>
-
-        <hr>
-
-        <audio controls>
-            <source src="medias/dog.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-
-        <hr>
-
-        <video  width = "300" height = "200" controls autoplay>
-            <source src = "medias/dog.mp4" type ="video/mp4" />
-            Your browser does not support the video element.
-        </video>
+        <div class="video">
+            <video  width = "300" height = "200" controls autoplay>
+                <source src = "media/dog.mp4" type ="video/mp4" />
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </div>
 
     </body>
 </html>
