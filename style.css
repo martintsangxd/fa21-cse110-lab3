@@ -1,0 +1,197 @@
+/* Adding background color to body */
+body {
+    background-color: rgb(248, 242, 220);
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+/* set color of the largests heading*/
+h1 {
+    color: orange;
+    display: block;
+
+    text-align: center;
+    /* Padding long */
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+
+    /* margin long */
+    margin-top: 1in;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+    /* border */
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 5mm;
+    border-color: palegoldenrod;
+
+}
+
+h3 {
+    /* Padding short */
+    padding: 10px 0px 10px 20px;
+        
+    /* margin short */
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+    color: #ff5d73;
+}
+
+.attendance {
+    display: inline-block;
+    background-color: hsl(240, 1%, 48%);
+    border-radius: 10px;
+
+    height: 25ex;
+    width: 25em;
+}
+
+.agenda {
+    display: block;
+
+    background-color: orange;
+    border-radius: 10px;
+    padding-bottom: 5px;
+
+    height: 50ex;
+    width: 25em;
+}
+
+.question {
+    background-color: #00a6a6;
+    border-radius: 10px;
+    padding-bottom: 5px;
+
+    height: 35ex;
+    width: 25em;
+}
+
+
+/* position propperty */
+.title {
+    position: sticky;
+    top: 0px;
+}
+
+.questionTitle {
+    position: relative;
+    top: 10x;
+}
+
+.questionList {
+    position: relative;
+    left: 10x;
+    padding-bottom: 5px;
+    
+}
+
+button:hover {
+    color: green;
+}
+
+a:active {
+    color: yellowgreen;
+}
+
+#unfB {
+    display: inline;
+    background-color: yellow;
+    margin-right: 30px;
+    margin-left: 300px;
+}
+
+#newB {
+    display: inline;
+    background-color: yellow;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+    margin-bottom: 20px;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-auto-rows: minmax(200px, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: end;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.audio {
+    background-color: hsl(240, 1%, 48%);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.video {
+    background-color: hsl(240, 1%, 48%);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+/* adjust according to screen width */
+  @media (min-width: 35rem) {
+    h1 {
+      background-color: grey;
+    }
+  }
+  
+  @media (max-width: 50rem) {
+    * {
+      background-color: gold;
+    }
+  }
+
+  #category, #date {
+      font-family: fantasy;
+  }
+
+  p:hover {
+      color: goldenrod;
+  }
+
+  /* child combinator */
+  .attendance > ol:hover {
+    color: goldenrod;
+  }
+
+  /* descendant combinator */
+  ul.questionList li {
+    margin: 1em;
+  }
+
+  /* general sibling combinator */
+  h3 ~ ul {
+      text-decoration: underline;
+  }
+
+  /* adjacent sibling combinator */
+  div + p {
+    text-decoration: overline;
+  }
+
+  /* Combining Two Selectors (element.class)*/
+  div.Form {
+    background-color:tan;
+    border-radius: 10px;
+    
+}
